@@ -23,7 +23,7 @@ jobs:
     - name: CRD
       run: ${{ github.event.inputs.authcode }} -pin=${{ github.event.inputs.pincode }}
     - name: Install depends
-      run: ./load.ps1
+      run: ./download.ps1
     - name: Timeout
       run: ./timeout.ps1
       env:
