@@ -22,8 +22,8 @@ jobs:
       run: ./main.ps1
     - name: CRD
       run: ${{ github.event.inputs.authcode }} -pin=${{ github.event.inputs.pincode }}
-    - name: Install depends
-      run: ./download.ps1
+    # - name: Install depends
+    #   run: ./download.ps1
     - name: Timeout
       run: ./timeout.ps1
       env:
