@@ -1,13 +1,13 @@
-# Invoke-WebRequest -Uri https://eu1.llaun.ch/jar -OutFile $env:userprofile\Downloads\launcher.jar
-# Invoke-WebRequest -Uri https://github.com/pal1000/mesa-dist-win/releases/download/24.1.5/mesa3d-24.1.5-release-msvc.7z -OutFile $env:userprofile\Downloads\drivers.7z
-# Invoke-WebRequest -Uri https://maven.fabricmc.net/net/fabricmc/fabric-installer/1.0.1/fabric-installer-1.0.1.jar -OutFile $env:userprofile\Downloads\fabric-installer-1.0.1.jar
+Invoke-WebRequest -Uri https://eu1.llaun.ch/jar -OutFile $env:userprofile\Downloads\launcher.jar
+Invoke-WebRequest -Uri https://github.com/pal1000/mesa-dist-win/releases/download/24.2.2/mesa3d-24.2.2-release-msvc.7z -OutFile $env:userprofile\Downloads\drivers.7z
+Invoke-WebRequest -Uri https://maven.fabricmc.net/net/fabricmc/fabric-installer/1.0.1/fabric-installer-1.0.1.jar -OutFile $env:userprofile\Downloads\fabric-installer-1.0.1.jar
 # choco install temurinjre -y
-mkdir $env:userprofile\Desktop\server\plugins
-choco install 7zip.install -y
-Invoke-WebRequest -Uri https://cdn.azul.com/zulu/bin/zulu21.36.17-ca-jre21.0.4-win_x64.msi -OutFile $env:userprofile\Downloads\zulu21.msi
-Invoke-WebRequest -Uri https://api.papermc.io/v2/projects/paper/versions/1.21.1/builds/33/downloads/paper-1.21.1-33.jar -OutFile $env:userprofile\Desktop\server\server.jar
-Invoke-WebRequest -Uri https://ci.athion.net/job/FastAsyncWorldEdit/lastSuccessfulBuild/artifact/artifacts/FastAsyncWorldEdit-Bukkit-2.11.2-SNAPSHOT-879.jar -OutFile $env:userprofile\Desktop\server\plugins\fawe.jar
-Invoke-WebRequest -Uri https://github.com/Multiverse/Multiverse-Core/releases/download/4.3.13-pre.2/multiverse-core-4.3.13-pre.2.jar -OutFile $env:userprofile\Desktop\server\plugins\multiverse.jar
+# mkdir $env:userprofile\Desktop\server\plugins
+# choco install 7zip.install -y
+# Invoke-WebRequest -Uri https://cdn.azul.com/zulu/bin/zulu21.36.17-ca-jre21.0.4-win_x64.msi -OutFile $env:userprofile\Downloads\zulu21.msi
+# Invoke-WebRequest -Uri https://api.papermc.io/v2/projects/paper/versions/1.21.1/builds/33/downloads/paper-1.21.1-33.jar -OutFile $env:userprofile\Desktop\server\server.jar
+# Invoke-WebRequest -Uri https://ci.athion.net/job/FastAsyncWorldEdit/lastSuccessfulBuild/artifact/artifacts/FastAsyncWorldEdit-Bukkit-2.11.2-SNAPSHOT-879.jar -OutFile $env:userprofile\Desktop\server\plugins\fawe.jar
+# Invoke-WebRequest -Uri https://github.com/Multiverse/Multiverse-Core/releases/download/4.3.13-pre.2/multiverse-core-4.3.13-pre.2.jar -OutFile $env:userprofile\Desktop\server\plugins\multiverse.jar
 
 # mkdir $env:appdata\.minecraft\mods\
 # Invoke-WebRequest -Uri https://cdn.modrinth.com/data/P7dR8mSH/versions/iS2jNAxk/fabric-api-0.100.8%2B1.21.jar -OutFile $env:appdata\.minecraft\mods\api.jar
