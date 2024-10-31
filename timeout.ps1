@@ -1,4 +1,3 @@
-# Credits By neurs
 $i = 99999
 do {
     Write-Host $i
